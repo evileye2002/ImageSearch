@@ -44,7 +44,8 @@ def store_vectors(
     paths_file="data/paths.pkl",
 ):
     model = get_extract_model()
-    vectors, paths = []
+    vectors=[]
+    paths = []
 
     for image_path in os.listdir(dataset_folder):
         image_path_full = os.path.join(dataset_folder, image_path)
