@@ -27,7 +27,7 @@ def image_preprocess(img):
 
 
 def extract_vector(model, image_path):
-    print("Xu ly : ", image_path)
+    print("Processing : ", image_path)
     img = Image.open(image_path)
     img_tensor = image_preprocess(img)
 
@@ -85,6 +85,7 @@ def search_image(
         axes[-1].set_title(nearest_image[id])
         plt.imshow(Image.open(draw_image[0]))
 
+    print("\nSearch result: ")
     fig.tight_layout()
     plt.show()
 
