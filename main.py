@@ -95,10 +95,3 @@ def test(test_img="data/test/test_1.png"):
     search_image(test_img)
 
 
-if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "test":
-        test_img = sys.argv[2] if len(sys.argv) > 2 else "data/test/test_1.png"
-
-        test(test_img)
-    else:
-        print("Usage: python main.py test [test_img]")
